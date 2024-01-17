@@ -1,0 +1,18 @@
+//SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.20;
+
+contract Incrementer{
+    uint public count;
+
+    function get() public view returns (uint){
+        return count;
+    }
+    //
+    function increment() public{
+        count +=  1;
+    }
+    function decrement() public{
+        count -= 1;
+    }
+}
